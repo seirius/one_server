@@ -1,3 +1,11 @@
+type Summoner {
+    profileIconId: Int,
+    name: String,
+    summonerLevel: Int,
+    accountId: Int,
+    id: Int,
+    revisionDate: Int
+}
 type Query {
-    hello: String
+    summoner(name: String!): Summoner
 }
