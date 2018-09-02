@@ -7,5 +7,6 @@ type Summoner {
     revisionDate: Int
 }
 type Query {
-    summoner(name: String!): Summoner
+    summoner(name: String!): Summoner,
+    profileIcon(iconId: Int!): String
 }

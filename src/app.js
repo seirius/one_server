@@ -24,6 +24,13 @@ const root = {
                 reject('nono');
             }
         });
+    },
+    profileIcon: args => {
+        if (args && args.iconId) {
+            return `http://ddragon.leagueoflegends.com/cdn/8.17.1/img/profileicon/${args.iconId}.png `;
+        }  else {
+            return '';
+        }
     }
 };
 
